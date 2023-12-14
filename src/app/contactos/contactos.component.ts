@@ -6,8 +6,8 @@ import {RouterLink, RouterLinkActive, RouterOutlet} from "@angular/router";
   standalone: true,
     imports: [
         RouterOutlet,
-      RouterLink,
-      RouterLinkActive
+        RouterLink,
+        RouterLinkActive
     ],
   templateUrl: './contactos.component.html',
   styleUrl: './contactos.component.css'

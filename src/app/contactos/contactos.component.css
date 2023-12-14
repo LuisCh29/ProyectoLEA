@@ -40,7 +40,7 @@ body{
 }
 
 footer{
-  position: absolute;
+
   width: 100%;
   bottom: 0;
   height: auto;
@@ -228,12 +228,17 @@ footer{
   padding-bottom: 1.5em;
 }
 
+#logocontactos{
+  position: relative;
+  left: 3em;
+}
+
 .container .form{
   padding: 30px;
 }
 .container .form .title {
   position: relative;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 600;
   color: #2f286a;
   font-family: sans-serif;
@@ -553,4 +558,3 @@ footer{
 .productos:hover .centrar-sumarproducto-descuento{
   display: inline-block;
 }
-
