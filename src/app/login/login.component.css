@@ -228,12 +228,17 @@ footer{
   padding-bottom: 1.5em;
 }
 
+#logocontactos{
+  position: relative;
+  left: 3em;
+}
+
 .container .form{
   padding: 30px;
 }
 .container .form .title {
   position: relative;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 600;
   color: #2f286a;
   font-family: sans-serif;
@@ -280,6 +285,11 @@ footer{
   font-size: 1.1em;
   border-bottom: 2px solid #ccc;
   border-top: 2px solid transparent;
+}
+
+#logologin{
+  position: relative;
+  left: 3em;
 }
 
 .input-field input:is(:focus, :valid){
