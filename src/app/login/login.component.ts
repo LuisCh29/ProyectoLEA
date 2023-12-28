@@ -11,5 +11,20 @@ import {RouterLink, RouterLinkActive, RouterOutlet} from "@angular/router";
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
+  LogIn() {
+    // @ts-ignore
+    var Email = document.getElementById("EmailLogIn").value
 
+    // @ts-ignore
+    var password = document.getElementById("ContrasenaLogin").value
+
+    let email1 = localStorage.getItem('email1')
+    let contra1 = localStorage.getItem('contra1')
+
+    if(Email === email1){
+      if(password === contra1){
+        console.log("Esto furula")
+      }
+    }
+  }
 }
