@@ -39,6 +39,24 @@ body{
   transform: scale(1.04);
 }
 
+#iconologin{
+  height: auto;
+  margin-left: .3em;
+  width: 2.5em;
+  border-radius: .3em;
+  border: 0.1em solid rgba(0, 51, 255, 0.45);
+  text-decoration: none;
+  color: black;
+  padding: .5em;
+  line-height: .5em;
+}
+
+#iconologin:hover{
+  background-color: rgba(0, 51, 255, 0.45);
+  color: white;
+  transform: scale(1.04);
+}
+
 footer{
   position: absolute;
   width: 100%;
