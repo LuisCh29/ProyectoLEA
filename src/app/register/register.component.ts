@@ -1,14 +1,16 @@
 import { Component } from '@angular/core';
-import {RouterOutlet} from "@angular/router";
+import {RouterLink, RouterLinkActive, RouterOutlet} from "@angular/router";
 import {UsuariosService} from "../usuarios.service";
 
 
 @Component({
   selector: 'app-register',
   standalone: true,
-  imports: [
-    RouterOutlet
-  ],
+    imports: [
+        RouterOutlet,
+        RouterLink,
+        RouterLinkActive
+    ],
   templateUrl: './register.component.html',
   styleUrl: './register.component.css',
   providers: [UsuariosService]

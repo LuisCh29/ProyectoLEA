@@ -11,6 +11,7 @@ export class UsuariosService {
     this.usuarios = storedUsuarios ? JSON.parse(storedUsuarios) : [[], []];
   }
 
+
   LogIn(usuario: string, contra: string) {
     console.log(this.usuarios)
     for (let i = 0; i < this.usuarios[0].length; i++) {
