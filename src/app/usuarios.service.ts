@@ -15,7 +15,7 @@ export class UsuariosService {
     console.log(this.usuarios)
     for (let i = 0; i < this.usuarios[0].length; i++) {
       if (this.usuarios[0][i] === usuario && this.usuarios[1][i] === contra) {
-        console.log("Esto funciona");
+        sessionStorage.setItem('logged','true')
         return;
       }
     }
