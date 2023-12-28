@@ -1,6 +1,6 @@
-
 import { Component } from '@angular/core';
 import {RouterOutlet} from "@angular/router";
+import {UsuariosService} from "../usuarios.service";
 
 
 @Component({
@@ -10,20 +10,21 @@ import {RouterOutlet} from "@angular/router";
     RouterOutlet
   ],
   templateUrl: './register.component.html',
-  styleUrl: './register.component.css'
+  styleUrl: './register.component.css',
+  providers: [UsuariosService]
 })
 export class RegisterComponent {
+  constructor(private UsuariosService: UsuariosService) {}
 
-  Reg() {
+  Reg(): void{
     // @ts-ignore
     let email = document.getElementById("Email").value
-
     // @ts-ignore
     let contrasena = document.getElementById("contra").value
 
-    localStorage.setItem('email1',email)
-    localStorage.setItem('contra1',contrasena)
+    this.UsuariosService.addUser(email, contrasena)
 
-    console.log("se ha guardado " + email + " " +contrasena)
   }
+
+
 }
