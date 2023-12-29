@@ -58,7 +58,7 @@ body{
 }
 
 #cerrarsesion{
-  position: absolute;
+  float: right;
   right: 0;
 
 }
@@ -577,3 +577,4 @@ footer{
 .productos:hover .centrar-sumarproducto-descuento{
   display: inline-block;
 }
+
