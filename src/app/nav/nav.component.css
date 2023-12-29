@@ -57,6 +57,11 @@ body{
   transform: scale(1.04);
 }
 
+#cerrarsesion{
+  position: absolute;
+  right: 0;
+}
+
 footer{
   position: absolute;
   width: 100%;
