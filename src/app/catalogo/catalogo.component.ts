@@ -12,4 +12,8 @@ import {RouterOutlet} from "@angular/router";
 })
 export class CatalogoComponent {
 
+  filter(filter: string){
+    sessionStorage.setItem("filter",filter)
+  }
+
 }

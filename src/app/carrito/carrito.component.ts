@@ -15,12 +15,12 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 })
 export class CarritoComponent {
 
-  codigoPromocional: string = '';
   totalCompra: number = 50;
   totalConDescuento: number = this.totalCompra;
 
   aplicarDescuento() {
-    if (this.codigoPromocional === '2024') {
+    // @ts-ignore
+    if (document.getElementById("codigoPromocional").value === '2024') {
       this.totalConDescuento = this.totalCompra - 15;
     } else {
       this.totalConDescuento = this.totalCompra;
