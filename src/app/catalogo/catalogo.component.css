@@ -98,14 +98,19 @@ footer{
 /* Inicio */
 
 .filtros{
+  display: block;
+  flex-direction: column;
   padding: .5em;
   padding-bottom: .1em;
-  float: right;
+  float: left;
   width: 22%;
   position: relative;
   margin-top: 0;
   margin-right: .5em;
+  border-right: solid black .2em;
+  border-bottom: solid black .2em;
   background-color: rgba(211, 211, 211, 0.35);
+
 }
 #novrec {
   font-weight: bold;
@@ -146,28 +151,26 @@ footer{
   background-color: rgba(0, 51, 255, 0.45);
 }
 
-.separador{
-  height: 5em;
-  display: inline-block;
-  width: 100%;
-  background-color: rgba(141, 141, 141, 0.42);
-}
-
 .todos-productos{
+  position: relative;
   display: flex;
   flex-direction: row;
-  float: left;
+  float: right;
 }
 
 .productos{
-  text-align: center;
   width: 18em;
-  margin-left: 4.5em;
-  margin-bottom: 2em;
-  margin-top: 1.9em;
+  text-align: center;
+  margin: 2em;
   padding: 2em;
   border-radius: .2em;
 }
+
+#paginas{
+  margin-left: 43%;
+  float: left;
+}
+
 
 .iconos{
   width: 1.5em;
@@ -505,38 +508,36 @@ footer{
   font-weight: bold;
 }
 
-.fondo-claro{
-  background-color: black;
-  color: white;
-}
-
-.fondo-oscuro{
-  background-color: grey;
-}
-
-.restar-producto{
-  background-color: red;
-  font-weight: bold;
-  float: left;
-  width: 1.8em;
-  height: 1.8em;
-}
 
 .numero-productos{
-  float: left;
-  width: 3em;
+  font-weight: 0;
+  font-size: 14px;
+  color: #fff;
+  background-color: #0066CC;
+  padding: 10px 30px;
+  border: solid #e0e0e0 2px;
+  border-radius: 50px;
+  transition : 500ms;
+  transform: translateY(0);
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
 }
 
-.sumar-producto{
-  background-color: green;
-  font-weight: bold;
-  float: left;
-  width: 1.8em;
-  height: 1.8em;
+.numero-productos:hover{
+  transition : 500ms;
+  padding: 10px 50px;
+  transform : translateY(-0px);
+  background-color: #fff;
+  color: #0066cc;
+  border: solid 2px #0066cc;
 }
+
 
 .centrar-sumarproducto{
-  margin-left: 25%;
   margin-top: 0.8em;
   display: none;
 }
@@ -546,7 +547,6 @@ footer{
 }
 
 .centrar-sumarproducto-descuento{
-  margin-left: 2%;
   display: none;
 }
 
