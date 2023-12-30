@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {RouterOutlet} from "@angular/router";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {ProductosService} from "../productos.service";
 
 @Component({
   selector: 'app-carrito',
@@ -18,6 +19,7 @@ export class CarritoComponent {
   totalCompra: number = 50;
   totalConDescuento: number = this.totalCompra;
 
+  constructor(private ProductosService: ProductosService) {}
   aplicarDescuento() {
     // @ts-ignore
     if (document.getElementById("codigoPromocional").value === '2024') {
@@ -27,5 +29,4 @@ export class CarritoComponent {
       console.log("funciona, descuento aplicado")
     }
   }
-
 }

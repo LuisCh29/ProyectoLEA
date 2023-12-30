@@ -36,8 +36,5 @@ export class UsuariosService {
     console.log(this.usuarios)
   }
 
-  catalogoSelected(idProducto: string){
-
-  }
 
 }
