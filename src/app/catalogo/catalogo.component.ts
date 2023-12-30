@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {RouterOutlet} from "@angular/router";
+import {ProductosService} from "../productos.service";
 
 @Component({
   selector: 'app-catalogo',
@@ -12,8 +13,15 @@ import {RouterOutlet} from "@angular/router";
 })
 export class CatalogoComponent {
 
+  constructor(private ProductosService: ProductosService) {}
+
   filter(filter: string){
     sessionStorage.setItem("filter",filter)
+  }
+
+  addProduct(product: string){
+    this.ProductosService.addProducto(product)
+    console.log(product)
   }
 
 }
