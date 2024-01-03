@@ -57,6 +57,69 @@ footer{
 
 /*Formularios */
 
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.contenedor .formulario {
+  width: 27em;
+  padding: 3em;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario .titulo {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #2f286a;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.campo {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.campo input {
+  width: calc(100% - 30px);
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #ccc;
+  font-size: 16px;
+}
+
+.campo i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: black;
+  font-size: 20px;
+  right: 5px;
+}
+
+.boton input {
+  padding: 10px 20px;
+  background: linear-gradient(100deg, #b3e1d6, #433d78);
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.iniciar-registrar {
+  text-align: center;
+  position: relative;
+  top: 3em;
+}
+
 #Nombre{
   margin-bottom: 10px;
   float: right;
@@ -235,7 +298,7 @@ footer{
 
 #logoregis{
   position: relative;
-  left: 3em;
+  right: 0.75em;
 }
 
 .container .form{
