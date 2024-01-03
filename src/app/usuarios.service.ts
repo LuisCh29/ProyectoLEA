@@ -35,6 +35,4 @@ export class UsuariosService {
     console.log("se ha guardado " + usuario + " " +contra)
     console.log(this.usuarios)
   }
-
-
 }
