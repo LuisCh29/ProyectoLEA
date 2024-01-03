@@ -13,15 +13,16 @@ import {ProductosService} from "../productos.service";
 })
 export class CatalogoComponent {
 
-  constructor(private ProductosService: ProductosService) {}
+  constructor(private ProductosService: ProductosService) {
+  }
 
   filter(filter: string){
     sessionStorage.setItem("filter",filter)
   }
 
-  addProduct(product: string){
-    this.ProductosService.addProducto(product)
-    console.log(product)
+  addProduct(product: string, precio:number){
+    this.ProductosService.addProducto(product, precio)
+    console.log(product + precio)
   }
 
 }
