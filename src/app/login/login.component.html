@@ -15,6 +15,13 @@
           <i class="fa-solid fa-lock icon"></i>
         </div>
 
+        <div id="errorLogIn" *ngIf="sessionStorage.getItem('error') === 'true'">
+          <a>Su usuario o contrasenya no son correctos o no estan registrados.</a>
+        </div>
+        <div id="perfLogIn" *ngIf="sessionStorage.getItem('logged') === 'true'">
+          <a>Ha iniciado session correctamente, vuelve a pulsar el boton.</a>
+        </div>
+
 
         <div class="checkbox-text">
           <div class="checkbox-content">

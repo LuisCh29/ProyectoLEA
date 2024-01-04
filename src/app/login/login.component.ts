@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import {RouterLink, RouterLinkActive, RouterOutlet} from "@angular/router";
 import {UsuariosService} from "../usuarios.service";
+import {NgIf} from "@angular/common";
 
 @Component({
   selector: 'app-login',
   standalone: true,
   imports: [
-    RouterOutlet, RouterLinkActive, RouterLink
+    RouterOutlet, RouterLinkActive, RouterLink, NgIf
   ],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css',
@@ -16,7 +17,9 @@ export class LoginComponent {
 
   router: string = "/login";
 
-  constructor(private UsuariosService: UsuariosService) {}
+  constructor(private UsuariosService: UsuariosService) {
+    sessionStorage.setItem('error','false')
+  }
 
   LogIn(): void{
     // @ts-ignore
@@ -29,6 +32,12 @@ export class LoginComponent {
     if(sessionStorage.getItem('logged')==="true"){
       this.router = "/catalogo"
       console.log(this.router)
+      sessionStorage.setItem('error','false')
+    }
+    else{
+      sessionStorage.setItem('error','true')
     }
   }
+
+  protected readonly sessionStorage = sessionStorage;
 }
