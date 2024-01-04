@@ -103,14 +103,18 @@ footer{
   padding: .5em;
   padding-bottom: .1em;
   float: left;
-  width: 22%;
-  position: relative;
   margin-top: 0;
   margin-right: .5em;
   border-right: solid black .2em;
   border-bottom: solid black .2em;
   background-color: rgba(211, 211, 211, 0.35);
-
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  width: 19%;
+  z-index: 1;
+  transform: translateX(0px);
+  height: 100%;
+  position: relative;
 }
 #novrec {
   font-weight: bold;
@@ -153,17 +157,20 @@ footer{
 
 .todos-productos{
   position: relative;
-  display: flex;
   flex-direction: row;
   float: right;
+  grid-template-columns: repeat(auto-fill,minmax(15rem,1fr));
+  display: grid;
+  grid-column-gap: 4%;
+  grid-row-gap: 0.5%;
+  max-width: 80%;
 }
 
 .productos{
-  width: 18em;
+  width: 92%;
   text-align: center;
-  margin: 2em;
-  padding: 2em;
-  border-radius: .2em;
+  margin: 1em;
+  padding: 1em;
 }
 
 #paginas{
