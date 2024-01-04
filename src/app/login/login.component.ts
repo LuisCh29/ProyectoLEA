@@ -13,6 +13,9 @@ import {UsuariosService} from "../usuarios.service";
   providers: [UsuariosService]
 })
 export class LoginComponent {
+
+  router: string = "/login";
+
   constructor(private UsuariosService: UsuariosService) {}
 
   LogIn(): void{
@@ -23,5 +26,9 @@ export class LoginComponent {
     var password = document.getElementById("ContrasenaLogin").value
 
     this.UsuariosService.LogIn(Email,password);
+    if(sessionStorage.getItem('logged')==="true"){
+      this.router = "/catalogo"
+      console.log(this.router)
+    }
   }
 }
