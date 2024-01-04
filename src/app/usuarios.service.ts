@@ -21,7 +21,6 @@ export class UsuariosService {
       }
     }
 
-    console.log("No se encontró la combinación de usuario y contraseña");
   }
 
   addUser(usuario: string, contra: string) {

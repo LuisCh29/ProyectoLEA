@@ -135,12 +135,12 @@
     </div>
     <div class="productos" *ngIf="sessionStorage.getItem('filter') === 'PC' || sessionStorage.getItem('filter') === ''"><a class="productos-enlaces PC" >
       <img alt="Imagen Productos" class="imagen-productos" src="./assets/logo-BD.png">
-      <h3>Sobrevivencia Extrema</h3>
+      <h3>Supervivencia Extrema</h3>
       <p class="descripcion">Enfréntate a desafíos extremos para sobrevivir en este juego de aventuras y estrategia.</p>
       <p class="precio">49,99€</p>
     </a>
       <div class="centrar-sumarproducto">
-        <button class="numero-productos" (click)="addProduct('SobrevivenciaExtrema',49.99)">Añadir producto al carrito</button>
+        <button class="numero-productos" (click)="addProduct('SupervivenciaExtrema',49.99)">Añadir producto al carrito</button>
       </div>
     </div>
     <div class="productos" *ngIf="sessionStorage.getItem('filter') === 'PC' || sessionStorage.getItem('filter') === ''"><a class="productos-enlaces PC">
@@ -153,14 +153,24 @@
         <button class="numero-productos" (click)="addProduct('ExploradoresEspacio',59.99)">Añadir producto al carrito</button>
       </div>
     </div>
-  <div class="productos" *ngIf="sessionStorage.getItem('filter') === 'PS4' || sessionStorage.getItem('filter') === ''"><a class="productos-enlaces PS4">
+  <div class="productos" *ngIf="sessionStorage.getItem('filter') === 'XBOX' || sessionStorage.getItem('filter') === ''"><a class="productos-enlaces PS4">
     <img alt="Imagen Productos" class="imagen-productos" src="./assets/logo-BD.png">
-    <h3>Producto prueba</h3>
-    <p class="descripcion">Descripción producto de prueba</p>
-    <p class="precio">29,99€</p>
+    <h3>Super Raúls Bros</h3>
+    <p class="descripcion">En este emocionante juego de plataformas, puedes abrirte paso entre los enemigos con arrays y funciones.</p>
+    <p class="precio">79,99€</p>
   </a>
     <div class="centrar-sumarproducto">
-      <button class="numero-productos" (click)="addProduct('Prod1',29.99)">Añadir producto al carrito</button>
+      <button class="numero-productos" (click)="addProduct('Prod1',79.99)">Añadir producto al carrito</button>
+    </div>
+  </div>
+  <div class="productos" *ngIf="sessionStorage.getItem('filter') === 'XBOX' || sessionStorage.getItem('filter') === ''"><a class="productos-enlaces PS4">
+    <img alt="Imagen Productos" class="imagen-productos" src="./assets/logo-BD.png">
+    <h3>Green Fields</h3>
+    <p class="descripcion">Disfruta de un mundo abierto sin limites ni preocupaciones.</p>
+    <p class="precio">49,99€</p>
+  </a>
+    <div class="centrar-sumarproducto">
+      <button class="numero-productos" (click)="addProduct('Green Fields',49.99)">Añadir producto al carrito</button>
     </div>
   </div>
   <div class="productos" *ngIf="sessionStorage.getItem('filter') === 'NS' || sessionStorage.getItem('filter') === ''"><a class="productos-enlaces PS4">
@@ -173,17 +183,7 @@
       <button class="numero-productos" (click)="addProduct('Prod1',29.99)">Añadir producto al carrito</button>
     </div>
   </div>
-  <div class="productos" *ngIf="sessionStorage.getItem('filter') === 'NS' || sessionStorage.getItem('filter') === ''"><a class="productos-enlaces PS4">
-    <img alt="Imagen Productos" class="imagen-productos" src="./assets/logo-BD.png">
-    <h3>Producto prueba</h3>
-    <p class="descripcion">Descripción producto de prueba</p>
-    <p class="precio">29,99€</p>
-  </a>
-    <div class="centrar-sumarproducto">
-      <button class="numero-productos" (click)="addProduct('Prod1',29.99)">Añadir producto al carrito</button>
-    </div>
-  </div>
-  <div class="productos" *ngIf="sessionStorage.getItem('filter') === 'NS' || sessionStorage.getItem('filter') === ''"><a class="productos-enlaces PC" >
+  <div class="productos" *ngIf="sessionStorage.getItem('filter') === 'XBOX' || sessionStorage.getItem('filter') === ''"><a class="productos-enlaces PC" >
     <img alt="Imagen Productos" class="imagen-productos" src="./assets/logo-BD.png">
     <h3>Producto prueba</h3>
     <p class="descripcion">Descripción producto de prueba</p>
@@ -214,7 +214,7 @@
     </div>
   </div>
 
-  <div class="productos" *ngIf="sessionStorage.getItem('filter') === 'NS' || sessionStorage.getItem('filter') === ''"><a class="productos-enlaces PC" href="">
+  <div class="productos" *ngIf="sessionStorage.getItem('filter') === 'XBOX' || sessionStorage.getItem('filter') === ''"><a class="productos-enlaces PC" href="">
     <img alt="Imagen Productos" class="imagen-productos" src="./assets/logo-BD.png">
     <h3>Producto prueba</h3>
     <p class="descripcion">Descripción producto de prueba</p>
@@ -225,7 +225,7 @@
     </div>
   </div>
 
-  <div class="productos" *ngIf="sessionStorage.getItem('filter') === 'NS' || sessionStorage.getItem('filter') === ''"><a class="productos-enlaces NS" href="">
+  <div class="productos" *ngIf="sessionStorage.getItem('filter') === 'PS4' || sessionStorage.getItem('filter') === ''"><a class="productos-enlaces NS" href="">
     <img alt="Imagen Productos" class="imagen-productos" src="./assets/logo-BD.png">
     <h3>Producto prueba</h3>
     <p class="descripcion">Descripción producto de prueba</p>
@@ -236,7 +236,7 @@
     </div>
   </div>
 
-  <div class="productos" *ngIf="sessionStorage.getItem('filter') === 'NS' || sessionStorage.getItem('filter') === ''"><a class="productos-enlaces PS4" href="">
+  <div class="productos" *ngIf="sessionStorage.getItem('filter') === 'PC' || sessionStorage.getItem('filter') === ''"><a class="productos-enlaces PS4" href="">
     <img alt="Imagen Productos" class="imagen-productos" src="./assets/logo-BD.png">
     <h3>Producto prueba</h3>
     <p class="descripcion">Descripción producto de prueba</p>
@@ -247,7 +247,7 @@
     </div>
   </div>
 
-  <div class="productos" *ngIf="sessionStorage.getItem('filter') === 'NS' || sessionStorage.getItem('filter') === ''"><a class="productos-enlaces XBOX">
+  <div class="productos" *ngIf="sessionStorage.getItem('filter') === 'PC' || sessionStorage.getItem('filter') === ''"><a class="productos-enlaces XBOX">
     <img alt="Imagen Productos" class="imagen-productos" src="./assets/logo-BD.png">
     <h3>Producto prueba</h3>
     <p class="descripcion">Descripción producto de prueba</p>
@@ -257,7 +257,7 @@
       <button class="numero-productos" (click)="addProduct('Prod1',29.99)">Añadir producto al carrito</button>
     </div>
   </div>
-  <div class="productos" *ngIf="sessionStorage.getItem('filter') === 'NS' || sessionStorage.getItem('filter') === ''"><a class="productos-enlaces XBOX">
+  <div class="productos" *ngIf="sessionStorage.getItem('filter') === 'PS4' || sessionStorage.getItem('filter') === ''"><a class="productos-enlaces XBOX">
     <img alt="Imagen Productos" class="imagen-productos" src="./assets/logo-BD.png">
     <h3>Producto prueba</h3>
     <p class="descripcion">Descripción producto de prueba</p>

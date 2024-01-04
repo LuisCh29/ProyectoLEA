@@ -39,6 +39,12 @@ body{
   transform: scale(1.04);
 }
 
+#errorLogIn{
+  color: red;
+}#perfLogIn{
+  color: green;
+ }
+
 footer{
 
   width: 100%;
