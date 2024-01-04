@@ -13,10 +13,6 @@ export class NavComponent {
 
   protected readonly sessionStorage = sessionStorage;
 
-  ngOnInit() {
-    sessionStorage.setItem('logged','false')
-  }
-
   cerrarSesion() {
     sessionStorage.setItem('logged','false')
   }

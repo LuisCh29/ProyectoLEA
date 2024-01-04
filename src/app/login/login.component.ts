@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {RouterLink, RouterLinkActive, RouterOutlet} from "@angular/router";
+import {RouterLink, RouterLinkActive, RouterOutlet, Router} from "@angular/router";
 import {UsuariosService} from "../usuarios.service";
 import {NgIf} from "@angular/common";
 
@@ -15,9 +15,7 @@ import {NgIf} from "@angular/common";
 })
 export class LoginComponent {
 
-  router: string = "/login";
-
-  constructor(private UsuariosService: UsuariosService) {
+  constructor(private UsuariosService: UsuariosService, private router: Router) {
     sessionStorage.setItem('error','false')
   }
 
@@ -30,9 +28,9 @@ export class LoginComponent {
 
     this.UsuariosService.LogIn(Email,password);
     if(sessionStorage.getItem('logged')==="true"){
-      this.router = "/catalogo"
       console.log(this.router)
       sessionStorage.setItem('error','false')
+      this.router.navigate(["/catalogo"])
     }
     else{
       sessionStorage.setItem('error','true')
