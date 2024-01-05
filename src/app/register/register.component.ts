@@ -20,11 +20,11 @@ export class RegisterComponent {
 
   Reg(): void{
     // @ts-ignore
-    let email = document.getElementById("mail").value
+    let user = document.getElementById("user").value
     // @ts-ignore
     let contrasena = document.getElementById("contras").value
 
-    this.UsuariosService.addUser(email, contrasena)
+    this.UsuariosService.addUser(user, contrasena)
 
   }
 

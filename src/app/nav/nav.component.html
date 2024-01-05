@@ -29,7 +29,7 @@
         <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
         <button class="btn btn-outline-success" type="submit"><img id="lupa-busqueda" alt="Lupa Busqueda" src="./assets/lupa.png"></button>
         <a class="carrito-boton" routerLink="/carrito" routerLinkActive="active"><img class="carro-imagen" alt="Carrito compra" src="./assets/carrito-negro.png"></a>
-        <a *ngIf="sessionStorage.getItem('logged') === 'false'" class="inicio-sesion" routerLink="/login" routerLinkActive="active">Iniciar Sesión</a>
+        <a *ngIf="sessionStorage.getItem('logged') != 'true'" class="inicio-sesion" routerLink="/login" routerLinkActive="active">Iniciar Sesión</a>
         <i *ngIf="sessionStorage.getItem('logged') === 'true'" id="iconologin" class="fa-regular fa-user fa-lg" role="button" data-bs-toggle="dropdown"> </i>
         <ul  id="cerrarsesion" class="dropdown-menu" >
           <li ><a class="dropdown-item" routerLink="/login" routerLinkActive="active" (click)="cerrarSesion()" *ngIf="sessionStorage.getItem('logged') === 'true'">Cerrar sesión</a></li>

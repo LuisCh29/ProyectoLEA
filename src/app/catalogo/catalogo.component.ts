@@ -25,12 +25,10 @@ export class CatalogoComponent {
 
   filter(filter: string){
     sessionStorage.setItem("filter",filter)
-    console.log(filter)
   }
 
   addProduct(product: string, precio:number){
     this.ProductosService.addProducto(product, precio)
-    console.log(product + precio)
   }
 
   protected readonly sessionStorage = sessionStorage;
